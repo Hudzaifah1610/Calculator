@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Claculator Zuper Keren</title>
+    <link rel="stylesheet" href="Tugas Calculator.css">
+</head>
+
+<style>
+
+body {
+    background-image: url(https://www.wallpapersin4k.org/wp-content/uploads/2017/04/Free-Gif-Wallpaper-Download-19.gif);
+    background-size: cover;
+}
+
+.content {
+    background: rgb(106, 255, 0);
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+    /* border: 5px solid blue; */
+}
+
+.content:hover{
+    background: rgb(187, 255, 0);
+}
+
+.judul {
+    margin: 0 0 0 50px;
+    padding-top: 50px;
+    color: rgb(5, 25, 238);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.judul:hover{
+    color: red;
+}
+
+::placeholder{
+    text-align: center;
+    color: rgb(187, 255, 0);
+}
+
+.satu {
+    width: 250px;
+    height: 40px;
+    margin: 50px 0 0 120px;
+    /* margin-right: 0px; */
+    border-radius: 10px;
+    font-size: 20px;   
+    text-align: center;
+    background: rgb(253, 6, 6);
+}
+
+.satu:hover {
+    background: rgb(12, 87, 238);
+}
+
+.dua {
+    width: 250px;
+    height: 25px;
+    margin-left: 120px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background: rgb(255, 12, 12)
+}
+
+.dua:hover {
+    background: rgb(11, 106, 238);
+}
+
+.tiga {
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 120px;
+    text-align: center;
+    background: rgb(245, 5, 5);
+}
+
+.tiga:hover {
+    background: rgb(9, 61, 246);
+}
+
+button {
+    margin: 0 0 0 70px;
+    background: rgb(0, 255, 81);
+    padding: 8px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button:hover {
+    color: white;
+    background: rgb(1, 65, 255);
+    border-radius: 20px;
+}
+
+#plus {
+    margin-left: 210px;
+}
+
+#kali {
+    margin-left: 140px;
+    /* margin-top: 50px; */
+}
+
+#bagi {
+    /* margin-left: 50px; */
+    margin-right: 110px;
+}
+
+#minus {
+    margin-left: 205px;
+    /* margin-top: 50px; */
+}
+
+.footer {
+    background: grey;
+    width: 500px;
+    height: 20px;
+    margin-top: 152px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.footer:hover{
+    color: blue;
+}
+
+</style>
+
+
+<body>
+<div class="content"> 
+    <h1 class="judul">Calculator Zuper Zimple's</h1>
+    <input class="satu" type="text" id="hasil" placeholder="Hasil" value="">
+    <br>  
+    <input class="dua" type="text" id="angka1" placeholder="Input 1" value=""><br>
+    <input class="tiga" type="text" id="angka2" placeholder="Input 2" value="">
+    <br><br>
+    <button id="plus" onclick="dtambah(this)">Plus</button><br>
+    <button id="kali"onclick="dkali(this)">Times</button>
+    <button id="bagi" onclick="dbagi(this)">Divide</button><br>
+    <button id="minus" onclick="dkurang(this)">Minus</button>
+
+    <div class="footer">Copyright @ Hudzaifah al jugjawy</div>
+</div>
+
+    <script>
+    let angka1 = document.getElementById("angka1")
+    let angka2 = document.getElementById("angka2")
+    let hasil = document.getElementById("hasil")
+    let kali = document.getElementById("kali")
+    let bagi = document.getElementById("bagi")
+
+
+    function dtambah(){
+        hasil.value = Number(angka1.value) + Number(angka2.value);
+    }
+    function dkurang(){
+        hasil.value = Number(angka1.value) - Number(angka2.value);
+    }
+    function dkali(){
+        hasil.value = Number(angka1.value) * Number(angka2.value)
+    }
+    function dbagi(){
+        hasil.value = Number(angka1.value) / Number(angka2.value)
+    }
+    </script>
+</body>
+</html>
